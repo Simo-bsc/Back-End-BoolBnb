@@ -1,0 +1,56 @@
+@import "../utility/variables.scss";
+@import "../utility/mixins.scss";
+
+.border_col{
+    border: 5px solid $secondary-bg;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.title_bg{
+    width: 100%;
+    background-color: $secondary-bg;
+    border-radius: 1px;
+    padding: 5px;
+    color: $primary-color;
+}
+
+.name_color{
+    color: $primary-color;
+}
+
+@media (min-width:0px) and (max-width: 479px){//MOBILE PICCOLO
+    .dashboard-content{
+        margin-bottom: 100px;// margine dei contenuti per non essere tagliati in altezza
+        .col-sm-12{
+
+            margin-top: 20px;// margine dei contenuti per non essere tagliati in altezza
+        }
+       
+    }
+
+
+}
+
+
+
+
+
+
+@media (min-width:480px) and (max-width: 768px){//MOBILE GRANDE
+    .dashboard-content{
+        margin-bottom: 100px;// margine dei contenuti per non essere tagliati in altezza
+        .col-sm-12{
+
+            margin-top: 20px;// margine dei contenuti per non essere tagliati in altezza
+        }
+      
+    }
+
+
+}
+
+

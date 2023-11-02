@@ -1,0 +1,13 @@
+@import "../utility/variables.scss";
+@import "../utility/mixins.scss";
+
+//RESPONSIVE PER I MESSAGGI
+@media (min-width: 0) and (max-width: 992px) {//SMARPHONR - TABLET
+    .msgr {
+        flex-direction: column;
+        .col-4 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import "../utility/variables.scss";
+@import "../utility/mixins.scss";
+
+.bord{
+        border-bottom: 3px solid rgba(45, 112, 162);
+        border-top: 3px solid rgba(45, 112, 162);
+        padding-bottom: 5px;
+        margin: 10px;
+}
+
+// .sponsor_btn_index{
+//     background-color: #F6AE2D;
+//     border: 2px solid #F6AE2D;
+//     border-top-right-radius: 10px;
+//     border-bottom-left-radius: 10px;
+//     padding: 10px;
+//     // font-size: 20px;
+    
+// }
+
+.sponsor_btn_index{
+    color: #F6AE2D;
+    border: 2px solid #F6AE2D;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+.sponsor_btn_index:hover{
+    color: white;
+    background-color: #F6AE2D;
+    border: 2px solid #F6AE2D;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+
+

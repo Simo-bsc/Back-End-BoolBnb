@@ -1,0 +1,411 @@
+@import "../utility/variables.scss";
+@import "../utility/mixins.scss";
+
+
+
+
+
+// RESPONSIVE PER app.blade.php
+.logo{
+    img{
+        scale: 2;
+        width: 75px;
+
+    }
+}
+.main-content {
+    width: 100vw;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.navbar{
+    // background: rgb(45,112,162);
+    // background: linear-gradient(90deg, rgba(45,112,162,1) 20%, rgba(47,72,88,1) 90%);
+    background-color: $secondary-bg;
+    
+}
+
+.responsive_chart{
+    width: 100%;
+    aspect-ratio: 2.1;
+}
+
+
+// media query pagina principale Utente loggato
+
+@media (min-width: 0px) and (max-width: 479px) {//MOBILE min
+    .create{
+        height: 88vh;
+        overflow-y: scroll;
+    }
+    main{
+        header{
+            position: sticky;
+            z-index: 999;
+        }
+    }
+
+    .return-site{
+        display: none;
+    }
+    .fa-solid{
+        width: auto;
+    }
+
+    .tablet{//ul-li per navbar ed header
+        display: none;
+    }
+    .mobile-desktop{//ul-li per navbar ed header
+        overflow-y: scroll;
+        display: block!important;
+    }
+    .mobile-container{
+        min-width: 100%;
+
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header{
+        position: sticky;
+        top: 0;
+    }
+    .main-content{//component
+        width: 100vw;
+        padding: 10px;
+        height: 100%;
+        overflow-y: auto!important; /* Aggiungi questa regola per l'overflow-y */
+        .mobile{
+            padding: 0!important;
+        }
+    }
+
+    .desktop-visible{
+        display: none;
+    }
+    .rowr {
+        flex-direction: column;
+        .col-6 {
+            width: 100%;
+            height: 100%;
+            .fill {
+                width: 100%!important;
+            }
+        }
+    }
+   
+
+}
+
+
+
+@media (min-width: 480px) and (max-width: 768px) {//MOBILE max
+    .create{
+        height: 88vh;
+        overflow-y: scroll;
+        min-height: 1px;
+    }
+    .tablet{//ul-li per navbar ed header
+        display: none;
+    }
+    .mobile-desktop{//ul-li per navbar ed header
+        display: block !important;
+    }
+    .mobile-container{
+        min-width: 100%;
+
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main-content{
+        min-width: 90vw;
+        overflow-y: auto!important; /* Aggiungi questa regola per l'overflow-y */
+        height: 100%;
+        .mobile{
+            padding: 0!important;
+        }
+    }
+    .desktop-visible{
+        display: none;
+    }
+  
+}
+
+
+button{
+    p{
+        padding: 0;
+        margin: 0;
+    }
+    
+}
+@media (min-width: 0) and (max-width: 768px) {//logo header
+    .img-fluid {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 990px) {//TABLET
+    .width-resp {
+        width: 100%!important;
+    }
+
+
+    button{
+        p{
+            padding: 0;
+            margin: 0;
+        }
+        margin-bottom: 100px;
+        
+    }
+     .mobile-desktop{//ul-li per navbar ed header
+         display: none;
+     }
+     .tablet-desktop{
+         height: 100vh;
+     }
+
+
+ 
+        header{//tiene insieme navbar e main-content
+            display: block;
+            max-height: 100vh;
+            overflow: auto;
+            position: sticky;
+            bottom: 0;
+            width: 10%;
+        }
+
+
+
+    .navbar{
+        flex-direction: column;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        max-width: max-content;
+
+    }
+    header{//tiene insieme navbar e main-content
+        display: flex;
+    }
+    button {
+        display: none; /* Nascondi l'hamburger menu */
+    }
+   
+    
+    #navbarSupportedContent{
+        display: flex;
+        height: 100vh;
+
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    ul{
+
+        margin: 0!important;
+        padding: 0!important;
+        li{
+            margin: 0!important;
+            padding: 0!important;
+        }
+    }
+    .navbar-nav {
+        display: block; /* Centra gli elementi verticalmente */
+    }
+    .desktop-visible{
+        
+        display: none;
+    }
+    
+    .activeLink {
+        a{
+            background-color: $secondary-color;
+                border-radius: 20px;
+                padding: 0 10px;
+            }
+    }
+    .imgr-tablet {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width: 990px) {//DESKTOP
+    .tablet {//ul-li per navbar ed header
+        display: none !important;
+    }
+    .mobile-desktop{//ul-li per navbar ed header
+        display: block !important;
+        button{
+            p{
+                padding: 0;
+                margin: 0;
+            }
+            margin-bottom: 100px!important;
+            
+        }
+    }
+
+    .tablet-desktop{
+        height: 100vh;
+    }
+
+    .nav{
+        width: 30%;
+    }
+
+    header{//tiene insieme navbar e main-content
+        display: block;
+        max-height: 100vh;
+        overflow: auto;
+        position: sticky;
+        bottom: 0;
+        width: 10%;
+    }
+
+
+    
+    header{//tiene insieme navbar e main-content
+        display: flex;
+    }
+    button {
+        display: none; /* Nascondi l'hamburger menu */
+    }
+   
+    .mobile-tablet-visible{
+        
+        display: none;
+    }
+    .logo {
+        width: 250x;
+        margin: 20px 0 0 0;
+    }
+    
+    #navbarSupportedContent{
+        display: flex;
+        height: 100vh;
+        width: max-content;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    ul{
+
+        margin: 0!important;
+        padding: 0!important;
+        li{
+            margin: 0!important;
+            padding: 0!important;
+        }
+    }
+    .navbar-nav {
+        display: block; /* Centra gli elementi verticalmente */
+    }
+    .activeLink {
+        background-color: $secondary-color;
+        border-radius: 20px;
+        
+        padding: 5px;
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+ .aicr {
+
+    
+    a {
+        button {
+            margin-bottom: 0px;
+        }
+    }
+
+    form {
+        button {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+}
+
+@media (min-width: 0px) and (max-width: 992px) {
+    
+    .drcr {
+        flex-direction: column;
+        height: 100%;
+        .col-6 {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+
+
+
+@media (min-width: 0) and (max-width: 992px) {//SMARPHONR - TABLET
+    .resp-img-col-5 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .resp-img-col-7 {
+        width: 100%;
+    }
+    .flx-col {
+        flex-direction: column;
+        a {
+            padding: 0;
+            .mtr {
+                margin-top: 10px;
+            }
+            button {
+                margin: 0;
+            }
+            span {
+                padding-bottom: 0.5rem !important;
+            }
+        }
+        form {
+            padding: 0;
+            button {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 0) and (max-width: 1130px) {//SMARPHONR - TABLET
+    
+    .carosello_img {
+        display: block !important;
+    }
+
+    .img_desk {
+        display: none !important;
+    }
+
+    .img_h {
+        height: 100%;
+    }
+
+    .car_img{
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .color_prim{
+        color: $primary-color !important;
+    }
+}

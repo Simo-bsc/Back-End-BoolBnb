@@ -1,0 +1,136 @@
+@import "~bootstrap/scss/bootstrap";
+// UTILITY
+@import "./utility/variables.scss";
+@import "./utility/mixins.scss";
+// PARTIALS
+@import "./partials/header.scss";
+@import "./partials/welcome.scss";
+@import "./partials/dashboard.scss";
+@import "./partials/aside.scss";
+@import "./partials/create.scss";
+@import "./partials/show.scss";
+@import "./partials/index.scss";
+@import "./partials/edit.scss";
+@import "./partials/responsive.scss";
+@import "./partials/messages_resp.scss";
+// MESSAGES
+@import "./messages/index.scss";
+// STATISTICS
+@import "./statistics/statistics.scss";
+//MY APARTMENT
+@import "./partials/my-apartment-resp.scss";
+
+
+//succsess.blade.php
+@import "./partials/succsess-resp.scss";
+
+
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    
+    a:hover{
+        text-decoration: none;
+    }
+}
+
+li a{
+    border: none;
+}
+// .activeLink {
+//     background-color: $secondary-color;
+//     border-radius: 20px;
+    
+//     padding: 5px;
+// }
+
+
+
+.tt-search-box-input-container {
+    border-radius: 0.375rem;
+}
+
+
+hr{
+    border: 2px solid $secondary-bg ;
+    opacity: 1;
+}
+
+.bglog{
+    background-image: url(/storage/app/public/img/Img-Background-login/bridge.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    header{
+
+        z-index: 999;
+    }
+}
+.back-drop{
+    border: 2px solid rgb(255, 255, 255, .5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+.width-navbar{
+    width: max-content !important;
+    max-width: none;
+}
+
+// //login
+
+// @media (min-width: 770px) and (max-width: 992px) {
+//     form {
+//         max-width: 50%;
+
+//         button{
+//             margin-bottom: 0px;
+//         } 
+//     }
+// }
+
+// @media (min-width: 993px) {
+//     form {
+//         max-width: 40%;
+//     }
+// }
+
+// //register
+
+// @media (min-width: 770px) and (max-width: 992px) {
+//     .form_reg {
+//         max-width: 50%;
+//     }
+// }
+
+// @media (min-width: 993px) {
+//     .form_reg {
+//         max-width: 40%;
+//     }
+// }
+
+// forgot pass
+
+@media (min-width: 770px) and (max-width: 992px) {
+    .form_pass {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 993px) {
+    .form_pass {
+        max-width: 40%;
+    }
+}
+

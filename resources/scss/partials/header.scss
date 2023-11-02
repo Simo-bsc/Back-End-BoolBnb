@@ -1,0 +1,46 @@
+@import "../utility/variables.scss";
+@import "../utility/mixins.scss";
+
+header {
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    ul {
+        list-style: none;
+        justify-content: flex-end;
+
+        li {
+            // padding-left: 15px;
+            
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 1.1rem;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .container {
+        a:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.colortext{
+    color: black;
+}
+
+.shadoww{
+    box-shadow: 5px 5px 5px 3px rgb(0, 0, 0, .5);
+}
+
+
+

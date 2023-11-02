@@ -1,0 +1,9 @@
+@import "../utility/variables.scss";
+@import "../utility/mixins.scss";
+
+.graphic{
+    height: 500px;
+    width: 1000px;
+    border: 4px solid $secondary-bg;
+    border-radius: 15px;
+}

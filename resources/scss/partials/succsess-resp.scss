@@ -1,0 +1,84 @@
+@import "../utility/variables.scss";
+@import "../utility/mixins.scss";
+
+//index di sponsorships
+.container-payment{
+    margin-bottom: 100px;
+    overflow-y: hidden;
+    height: 100%;
+}
+
+
+
+
+
+//dashboard backend
+.turnhome-a-hover, .turnhome-a-hover > i{
+    color: green!important;
+}
+.turnhome-a-hover:hover{
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #F6AE2D;
+}
+.turnhome-a-hover:active{
+    color: white!important;
+    background-color: #f26419;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #F6AE2D;
+}
+.turnhome-a-hover:active > i{
+    color: white!important;
+    
+}
+
+
+//sito front end
+.turnsite-a-hover, .turnsite-a-hover > i{
+    color: #F6AE2D!important;
+}
+.turnsite-a-hover:hover{
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #F6AE2D;
+}
+.turnsite-a-hover:active{
+    color: white!important;
+    background-color: #f26419;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #F6AE2D;
+}
+.turnsite-a-hover:active > i{
+    color: white!important;
+    
+}
+
+
+//i tuoi appartamenti
+.apartment-a-hover, .apartment-a-hover > i {
+    color: #f26419 !important;
+}
+
+.apartment-a-hover:hover{
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #F6AE2D;
+}
+.apartment-a-hover:active {
+    color: white!important;
+    background-color: #f26419;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #F6AE2D;
+}
+.apartment-a-hover:active > i{
+    color: white!important;
+
+}
+
+

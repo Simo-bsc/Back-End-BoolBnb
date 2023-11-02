@@ -1,0 +1,60 @@
+@import "../utility/variables.scss";
+@import "../utility/mixins.scss";
+
+.col-4{
+        img{
+                width: 100px;
+                height: 100px;
+
+        }
+
+        h4{
+                color: $primary-color;
+        }
+
+        .object{
+                color: black;
+        }
+}
+
+.borde{
+
+        p{
+                border-top: 3px solid #F6AE2D;      
+        }
+}
+
+.title_bg{
+    width: 100%;
+    background-color: $secondary-bg;
+    border-radius: 1px;
+    padding: 5px;
+}
+
+.bg{
+        
+        box-shadow: 0px 0px 5px 3px rgb(0, 0, 0, .5);
+}
+
+.bg-col-left{
+                background-color: white;
+                color: black;
+                border: 3px solid $secondary-bg;
+                border-radius: 5px;
+}
+
+
+
+
+@media (min-width:0px) and (max-width:768px){
+
+        
+        .container-mobile-messages{
+                margin-bottom: 100px!important;
+            
+        }
+    }
+   
+
+
+
